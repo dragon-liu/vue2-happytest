@@ -1,5 +1,8 @@
 # vue2-happytest
 
+## demo  
+https://dragon-liu.github.io/vue2-happytest/
+
 ## Project setup
 ```
 npm install
