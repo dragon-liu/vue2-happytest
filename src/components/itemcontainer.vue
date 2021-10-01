@@ -122,6 +122,7 @@ export default {
     //初始化信息
     if (this.fatherComponent == "home") {
       this.initializeData();
+			//切换到根路由后背景图片相应切换，这里的地址对应build后生成的dist文件夹内相对路径
       document.body.style.backgroundImage = "url(./img/1-1.1f6f6a62.jpg)";
     }
   },

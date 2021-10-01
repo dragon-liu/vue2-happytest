@@ -50,6 +50,7 @@ export default {
   created() {
     this.computedScore();
     this.getScoreTip();
+    //切换到结算分数路由后背景图片相应切换，这里的地址对应build后生成的dist文件夹内相对路径
     document.body.style.backgroundImage = 'url(./img/4-1.c22a6563.jpg)';
   },
   methods: {
