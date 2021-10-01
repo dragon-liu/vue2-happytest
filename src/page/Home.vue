@@ -6,9 +6,7 @@
 </template>
 
 <script>
-
 import Itemcontainer from '../components/Itemcontainer'
-
 export default {
   name:'Home',
   components: {

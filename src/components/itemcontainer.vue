@@ -63,9 +63,7 @@
 </template>
 
 <script>
-
 import { mapState, mapActions } from "vuex"
-
 export default {
   name:'Itemcontainer',
   data() {
@@ -113,7 +111,7 @@ export default {
       this.choosedNum = type;
       this.choosedId = id;
     },
-    //到达最后一题，交卷，请空定时器，跳转分数页面
+    //到达最后一题，交卷，清空定时器，跳转分数页面
     submitAnswer() {
       if (this.choosedNum !== null) {
         this.addNum(this.choosedId);
