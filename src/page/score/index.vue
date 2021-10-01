@@ -50,7 +50,7 @@ export default {
   created() {
     this.computedScore();
     this.getScoreTip();
-    document.body.style.backgroundImage = 'url(./static/img/4-1.jpg)';
+    // document.body.style.backgroundImage = 'url(../../images/4-1.jpg)';
   },
   methods: {
     //计算分数
@@ -76,7 +76,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 body {
   background-image: url(../../images/4-1.jpg);
   padding-top: 1.2rem;

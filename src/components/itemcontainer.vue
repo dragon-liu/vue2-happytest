@@ -122,7 +122,7 @@ export default {
     //初始化信息
     if (this.fatherComponent == "home") {
       this.initializeData();
-      document.body.style.backgroundImage = "url(./static/img/1-1.jpg)";
+      //document.body.style.backgroundImage = "url(./static/img/1-1.jpg)";
     }
   },
 };
@@ -198,7 +198,7 @@ export default {
 }
 .item_title {
   font-size: 0.65rem;
-  color: #00e;
+  color: #fff;
   line-height: 0.7rem;
 }
 .item_list {
@@ -208,7 +208,7 @@ export default {
   span {
     display: inline-block;
     font-size: 0.6rem;
-    color: #00e;
+    color: #fff;
     vertical-align: middle;
   }
   .option_style {

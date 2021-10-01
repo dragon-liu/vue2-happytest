@@ -1,9 +1,5 @@
-import App from '../App'
-
+//创建并暴露route配置数组
 export default [{
-    path: '/',
-    component: App,
-    children: [{
         path: '', //NOTE:即根路径/#/默认显示home路由组件
         component: r => require.ensure([], () => r(require('../page/home')), 'home')
     }, {
@@ -13,4 +9,3 @@ export default [{
         path: '/score',
         component: r => require.ensure([], () => r(require('../page/score')), 'score')
     }]
-}]
