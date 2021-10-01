@@ -1,12 +1,13 @@
 <template>
-  <div>
-    <Itemcontainer></Itemcontainer>
+  <div class="home_container">
+    <!-- camel-case方式传参，组件内部就以驼峰式接收参数 -->
+    <Itemcontainer father-component="home"></Itemcontainer>
   </div>
 </template>
 
 <script>
 
-import Itemcontainer from '../components/itemcontainer.vue'
+import Itemcontainer from '../components/Itemcontainer'
 
 export default {
   name:'Home',
