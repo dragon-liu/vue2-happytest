@@ -150,7 +150,7 @@ export default {
     height: 0.7rem;
     width: 2.5rem;
     font-size: 0.6rem;
-    font-family: "黑体";
+    font-family: "\\9ED1\4F53";
     font-weight: 600;
     color: #a57c50;
     text-align: center;
