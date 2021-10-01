@@ -3,8 +3,8 @@
     <!-- 分数与分数提示 -->
     <div class="your_scores_container">
       <header class="your_scores">
-        <span class="score_num">{{ score }}</span
-        ><span class="fenshu">分！</span>
+        <span class="score_num">{{ score }}</span>
+        <span class="fenshu">分！</span>
       </header>
       <div class="result_tip">{{ scoreTips }}</div>
     </div>
