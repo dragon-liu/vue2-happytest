@@ -2,7 +2,7 @@
 node_modules
 /dist
 package-lock.json
-.sh
+deploy.sh
 vue.config.js
 
 # local env files
