@@ -11,20 +11,8 @@ import Itemcontainer from '../components/Itemcontainer'
 
 export default {
   name:'Home',
-  data() {
-    return {
-
-    }
-  },
-  methods: {
-
-  },
   components: {
     Itemcontainer
   }
 }
 </script>
-
-<style scoped>
-
-</style>

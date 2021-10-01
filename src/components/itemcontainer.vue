@@ -3,16 +3,19 @@
     <header class="top_tips">
       <!-- 初始化页面默认显示第几周 -->
       <span class="num_tip" v-if="fatherComponent == 'home'">{{ level }}</span>
+
       <!-- item路由组件头部显示当前为第几题 -->
       <span class="num_tip" v-if="fatherComponent == 'item'">题目{{ itemNum }}</span
       >
     </header>
+
     <!-- 初始化页面默认为Home路由组件 -->
     <div v-if="fatherComponent == 'home'">
       <div class="home_logo item_container_style"></div>
       <!-- 点击后路径变为/#/item，App.vue中<router-view></router-view>变为item路由组件 -->
-      <router-link to="item" class="start button_style"></router-link>
+      <router-link to="/item" class="start button_style"></router-link>
     </div>
+
     <!-- item路由组件对应的选择答题区 -->
     <div v-if="fatherComponent == 'item'">
       <div class="item_back item_container_style">
@@ -55,6 +58,7 @@
         @click="submitAnswer"
       ></span>
     </div>
+
   </section>
 </template>
 
