@@ -70,20 +70,67 @@ export default {
   name:'Itemcontainer',
   data() {
     return {
-
-    }
+      itemId: null, //题目ID
+      choosedNum: null, //选中答案索引
+      choosedId: null, //选中答案id
+    };
   },
-  props:['fatherComponent'],
-  computed:{
-    ...mapState([
-      "itemNum", //第几题
-      "level", //第几周
-      "itemDetail", //题目详情
-      "timer", //计时器
-    ])
-  },
+  props: ["fatherComponent"],
+  computed: mapState([
+    "itemNum", //第几题
+    "level", //第几周
+    "itemDetail", //题目详情
+    "timer", //计时器
+  ]),
   methods: {
-    ...mapActions()
+    ...mapActions(["addNum", "initializeData"]),
+    //点击下一题
+    nextItem() {
+      //跳到下一题之前重置选中答案索引
+      if (this.choosedNum !== null) {
+        this.choosedNum = null;
+        //保存答案, 题目索引加一，跳到下一题
+        this.addNum(this.choosedId);
+      } else {
+        alert("您还没有选择答案哦");
+      }
+    },
+    //索引0-3对应答案A-B
+    chooseType: (type) => {
+      switch (type) {
+        case 0:
+          return "A";
+        case 1:
+          return "B";
+        case 2:
+          return "C";
+        case 3:
+          return "D";
+      }
+    },
+    //选中的答案信息
+    choosed(type, id) {
+      this.choosedNum = type;
+      this.choosedId = id;
+    },
+    //到达最后一题，交卷，请空定时器，跳转分数页面
+    submitAnswer() {
+      if (this.choosedNum !== null) {
+        this.addNum(this.choosedId);
+        clearInterval(this.timer);
+        this.$router.push("score");
+      } else {
+        alert("您还没有选择答案哦");
+      }
+    },
+  },
+  created() {
+    //初始化信息
+    if (this.fatherComponent == "home") {
+      this.initializeData();
+			//切换到根路由后背景图片相应切换，这里的地址对应build后生成的dist文件夹内相对路径
+      document.body.style.backgroundImage = "url(./img/1-1.1f6f6a62.jpg)";
+    }
   },
 }
 </script>

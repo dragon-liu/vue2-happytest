@@ -15,7 +15,8 @@ export default {
     Itemcontainer
   },
   created(){
-    
+    //进入题目页面，开始计时
+    this.$store.commit('REMBER_TIME')
   }
 }
 </script>

@@ -11,7 +11,7 @@ const state = {
 	level: '第一周', //活动周数
 	itemNum: 1, // 第几题
 	allTime: 0,  //总共用时
-	timer: '', //定时器
+	timer: '', //定时器id
 	itemDetail: [{
 		"topic_id": 20,
 		"active_topic_id": 4,
