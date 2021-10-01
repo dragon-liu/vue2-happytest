@@ -1,7 +1,7 @@
 # vue2-happytest
 
 ## demo  
-https://dragon-liu.github.io/vue2-happytest/ （在chrome手机模式下查看）
+[demo地址](https://dragon-liu.github.io/vue2-happytest/)（请用chrome手机模式预览） 
 
 ## Project setup
 ```
