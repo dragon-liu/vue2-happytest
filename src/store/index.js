@@ -12,7 +12,7 @@ const state = {
 	itemNum: 1, // 第几题
 	allTime: 0,  //总共用时
 	timer: '', //定时器id
-	itemDetail: [{
+	itemDetail: [{ //选项信息
 		"topic_id": 20,
 		"active_topic_id": 4,
 		"type": "ONE",

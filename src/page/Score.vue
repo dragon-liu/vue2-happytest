@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- 分数与分数提示 -->
+    <!-- 分数与分数评语 -->
     <div class="your_scores_container">
       <header class="your_scores">
         <span class="score_num">{{ score }}</span>

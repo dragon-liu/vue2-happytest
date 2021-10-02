@@ -42,6 +42,7 @@
 
               <!-- 选项文本 -->
               <span class="option_detail">{{ item.answer_name }}</span>
+
             </li>
           </ul>
         </div>
@@ -69,7 +70,7 @@ export default {
   name:'Itemcontainer',
   data() {
     return {
-      itemId: null, //题目ID
+      // itemId: null, //题目ID
       choosedNum: null, //选中答案索引
       choosedId: null, //选中答案id
     };
@@ -117,14 +118,14 @@ export default {
       if (this.choosedNum !== null) {
         this.addNum(this.choosedId);
         clearInterval(this.timer);
-        this.$router.push("score");
+        this.$router.push("/score"); //这里"score"等同于"/score"
       } else {
         alert("您还没有选择答案哦");
       }
     },
   },
+  //Home路由组件初始化信息
   created() {
-    //初始化信息
     if (this.fatherComponent == "home") {
       this.initializeData();
 			//切换到根路由后背景图片相应切换，这里的地址对应build后生成的dist文件夹内相对路径
