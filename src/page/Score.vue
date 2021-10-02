@@ -33,9 +33,9 @@ export default {
   name: "Score",
   data() {
     return {
-      showHide: false, //是否显示提示
+      showHide: false, //是否显示分享提示
       score: 0, //分数
-      scoreTips: "", //分数提示
+      scoreTips: "", //分数评语
       rightAnswer: [2, 7, 12, 13, 18], //正确答案
       scoreTipsArr: [
         "你说，是不是把知识都还给小学老师了？",
@@ -66,7 +66,7 @@ export default {
     showCover() {
       this.showHide = !this.showHide;
     },
-    //根据分数显示提示
+    //根据分数显示评语
     getScoreTip() {
       let index = Math.ceil(this.score / 20) - 1;
       if(index < 0) 
@@ -77,7 +77,8 @@ export default {
 };
 </script>
 
-<style lang="less">
+<!--这里不能加scoped,否则body的样式无法成功应用-->
+<style lang="less"> 
 body {
   background-image: url(../images/4-1.jpg);
   padding-top: 1.2rem;

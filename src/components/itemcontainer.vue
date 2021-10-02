@@ -1,5 +1,6 @@
 <template>
   <section>
+    <!-- 页眉 -->
     <header class="top_tips">
       <!-- 初始化页面默认显示第几周 -->
       <span class="num_tip" v-if="fatherComponent == 'home'">{{ level }}</span>
@@ -238,4 +239,3 @@ export default {
   }
 }
 </style>
-
