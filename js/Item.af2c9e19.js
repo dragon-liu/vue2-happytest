@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["Item"],{1380:function(t,e,n){"use strict";n.r(e);var c=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",[n("Itemcontainer",{attrs:{"father-component":"item"}})],1)},o=[],a=n("a1ec"),r={name:"Item",components:{Itemcontainer:a["a"]},created:function(){this.$store.commit("REMBER_TIME")}},i=r,s=n("2877"),m=Object(s["a"])(i,c,o,!1,null,null,null);e["default"]=m.exports}}]);
+//# sourceMappingURL=Item.af2c9e19.js.map
